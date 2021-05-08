@@ -10,6 +10,7 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "jquery": "^3.6.0",
+    "table-to-excel": "^1.0.6",
     "vue": "^2.6.11"
   },
   "devDependencies": {

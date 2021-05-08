@@ -1,22 +1,27 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <table border="1" id="anhth">
-      <tr>
-        <td>id</td>
-        <td>name</td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>快速上手. Ant Design Vue 致力于提供给程序员愉悦的开发体验。 在</td>
-      </tr>
-    </table>
-    <button type="button" v-on:click="exportReportToExcel">Export</button>
+    <table id="table">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>ecofe</td>
+        <td>18</td>
+    </tr>
+    <tr>
+        <td>alice</td>
+        <td>3</td>
+    </tr>
+</table>
+<button id="button1" v-on:click="exportReportToExcel">Create By DOM</button>
   </div>
 </template>
 
 <script>
-import $ from 'jquery'
+//import $ from 'jquery'
+import TableToExcel from 'table-to-excel'
 
 export default {
   name: 'HelloWorld',
@@ -25,15 +30,8 @@ export default {
   },
   methods: {
     exportReportToExcel(){
-      let table = document.getElementsByTagName("table"); // you can use document.getElementById('tableId') as well by providing id to the table tag
-        window.TableToExcel.convert(table[0], { // html code may contain multiple tables so here we are refering to 1st table tag
-        name: `export.xlsx`, // fileName you could use any name
-        sheet: {
-          name: 'Sheet 1' // sheetName
-        }
-      });
-      //console.log(this.$('#anhth'));
-      console.log($('#anhth'));
+        var tableToExcel=new TableToExcel();
+        tableToExcel.render("table");
     }
   },
   
