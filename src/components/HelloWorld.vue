@@ -133,6 +133,8 @@
 </template>
 
 <script>
+//import * as anhth from '../assets/lib/my-js.js'
+
 export default {
   name: 'HelloWorld',
   props: {
@@ -148,6 +150,9 @@ export default {
             name: 'Sheet 1' // sheetName
             }
         });
+
+        //anhth.Hello(anhth.yes);
+        //console.log(yes);
         //console.log(this.$('#simpleTable1'));
     }
   },
