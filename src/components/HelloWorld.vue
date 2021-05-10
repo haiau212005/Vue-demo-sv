@@ -36,14 +36,7 @@
           </tr>
           <tr>
             <td rowspan="1" data-t="n">1</td>
-            <td
-              rowspan="1"
-              data-b-b-s="thick"
-              data-b-l-s="thick"
-              data-b-r-s="thick"
-            >
-              ABC1
-            </td>
+            <td rowspan="1" data-b-b-s="thin" data-b-l-s="thin" data-b-r-s="thin" data-b-t-s="thin">ABC1</td>
             <td rowspan="1" data-f-strike="true">Striked Text</td>
             <td data-t="d">05-20-2018</td>
             <td data-t="n" data-num-fmt="$ 0.00">2210.00</td>
