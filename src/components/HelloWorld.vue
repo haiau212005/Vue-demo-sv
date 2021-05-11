@@ -142,6 +142,7 @@ export default {
   },
   methods: {
     exportReportToExcel(){
+
         let TableToExcel = window.TableToExcel;
         let tableHtml = document.getElementById('simpleTable1');
         TableToExcel.convert(tableHtml, { // html code may contain multiple tables so here we are refering to 1st table tag
@@ -150,10 +151,14 @@ export default {
             name: 'Sheet 1' // sheetName
             }
         });
+<<<<<<< HEAD
 
         //anhth.Hello(anhth.yes);
         //console.log(yes);
         //console.log(this.$('#simpleTable1'));
+=======
+        console.log(this.$('#simpleTable1'));
+>>>>>>> f1046507f84342c591a7f353ea0a3561795c36f3
     }
   },
   
