@@ -2,6 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <table id="simpleTable1" data-cols-width="70,15,10">
+      
         <tbody>
           <tr>
             <td
